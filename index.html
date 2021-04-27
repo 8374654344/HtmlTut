@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <h1 style="font-size:60px;">this is head tag for heading</h1>
-    <div>
-        <h2 title="this is h1 tag">this is heading 2</h2><b>this is first bold</b>
-        <b>this is bold</b><b>this is also bold</b>
-        <p title='John "ShotGun" Nelson'>dd</p>
-        <p style="color:red;">this is paragraph tag</p>
-        <p title="this paragraph contains br tag">This is a <br> paragraph with a line break.</p>
-        <a href="https://www.google.com">google</a><br><hr>
-        <img src="./images/ramesh_sym.jpg" alt="photo" width="200" height="400">
-        <p>this is third paragraph</p>
-        <p>this is p beside a <a href="https://www.facebook.com">facebook</a></p>
-        <p><b>Dr. Priya Sampathkumar, MD,</b> is the Chair of Infection Prevention and Control, 
-            and Infectious Disease specialist, Mayo Clinic, Rochester, Minnesota, USA. 
-            Having managed COVID-19 patients all of last year in the US, 
-            she shares her views and suggestions on what people can do to 
-            reduce the impact of the pandemic in India.</p>
-            <pre>
+    <h2 title="this is h1 tag">this is heading 2</h2><b>this is first bold</b>
+    <b>this is bold</b><b>this is also bold</b>
+    <p title='John "ShotGun" Nelson'>dd</p>
+    <p style="color:red;">this is paragraph tag</p>
+    <p title="this paragraph contains br tag">This is a <br> paragraph with a line break.</p>
+    <a href="https://www.google.com" target="_top">google</a><br style="border:2px solid red;">
+    <hr style="border:2px solid powderblue;">
+    <img style="border:2px solid red;" src="./images/ramesh_sym.jpg" alt="photo" width="200" height="400">
+    <p>this is third paragraph</p>
+    <p style="border:2px solid red;">this is p beside a <a
+            style="border:2px solid rgb(230, 176, 176);background-color:powderblue;"
+            href="https://www.facebook.com" target="_blank">facebook</a></p>
+    <p><b style="border:2px solid powderblue;">Dr. Priya Sampathkumar, MD,</b> is the Chair of Infection Prevention and
+        Control,
+        and Infectious Disease specialist, Mayo Clinic, Rochester, Minnesota, USA.
+        Having managed COVID-19 patients all of last year in the US,
+        she shares her views and suggestions on what people can do to
+        reduce the impact of the pandemic in India.</p>
+    <pre style="border:2px solid powderblue;">
                 My Bonnie lies over the ocean.
               
                 My Bonnie lies over the sea.
@@ -32,6 +37,54 @@
               
                 Oh, bring back my Bonnie to me.
               </pre>
-    </div>
+    <!-- Table creation-->
+    <!-- type one table, without style-->
+    <table>
+        <caption>Employee Info</caption>
+        <tr>
+            <th>S.No</th>
+            <th>Emp Name</th>
+            <th>Company</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ramesh</td>
+            <td>LTTS</td>
+        </tr>
+    </table>
+    <!-- type 2 table, without style and colspan applied-->
+    <table>
+        <caption>Persone Info</caption>
+        <tr>
+            <th>S.NO</th>
+            <th>Name</th>
+            <th colspan="2">mobile</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>ramesh</td>
+            <td>2323232323</td>
+            <td>3434343434</td>
+        </tr>
+    </table>
+    <!-- type 3 table, without style-->
+    <table>
+        <tr>
+            <th>Sno</th>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th>Name</th>
+            <td>Ramesh</td>
+        </tr>
+        <tr>
+            <th rowspan="2">mobile</th>
+            <td>3454333433</td>
+            <td>3989839389</td>
+
+        </tr>
+    </table>
+
 </body>
+
 </html>

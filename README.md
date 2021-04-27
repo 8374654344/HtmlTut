@@ -19,13 +19,13 @@ The <title> element specifies a title for the HTML page (which is shown in the b
 The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
 The <h1> element defines a large heading
 The <p> element defines a paragraph
-all heading tags <h1>---<h6> and paragraph tags <p> are inline elements 
+all heading tags <h1>---<h6> and paragraph tags <p> are block level elements 
 HTML links are defined with the <a> tag:
 HTML images are defined with the <img> tag.
 The source file (src), alternative text (alt), width, and height are provided as attributes:
 img attributes src,alt,width,height
-<a>,<img> are block level elements
-<hr> is inline element
+<a>,<img> are inline elements
+<hr> is block level element
 The <hr> tag is an empty tag, which means that it has no end tag.
 <br> is line break 
 The <br> tag is an empty tag, which means that it has no end tag.
@@ -38,7 +38,42 @@ Notes: External images might be under copyright. If you do not get permission to
 2. Relative URL - Links to an image that is hosted within the website. Here, the URL does not include the domain name. If the URL begins without a slash, it will be relative to the current page. Example: src="img_girl.jpg". If the URL begins with a slash, it will be relative to the domain. Example: src="/images/img_girl.jpg".
 
 Tip: It is almost always best to use relative URLs. They will not break if you change domain.
-
+--------------------------------------------------------------------------------------
+HTML - The Head Element
+------------------------
+The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>.
+The HTML <link> Element
+The <link> element defines the relationship between the current document and an external resource.
+The <link> tag is most often used to link to external style sheets:
+<link rel="stylesheet" href="mystyle.css">
+The HTML <meta> Element
+The <meta> element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+The metadata will not be displayed on the page, but are used by browsers (how to display content or reload page), by search engines (keywords), and other web services.
+Define the character set used:
+<meta charset="UTF-8">
+Define keywords for search engines:
+<meta name="keywords" content="HTML, CSS, JavaScript">
+Define a description of your web page:
+<meta name="description" content="Free Web tutorials">
+Define the author of a page:
+<meta name="author" content="John Doe">
+Refresh document every 30 seconds:
+<meta http-equiv="refresh" content="30">
+Setting the viewport to make your website look good on all devices:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+----------------------------------------------------------------------
+The HTML <base> Element
+The <base> element specifies the base URL and/or target for all relative URLs in a page.
+The <base> tag must have either an href or a target attribute present, or both.
+There can only be one single <base> element in a document!
+<head>
+<base href="https://www.w3schools.com/" target="_blank">
+</head>
+<body>
+<img src="images/stickman.gif" width="24" height="39" alt="Stickman">
+<a href="tags/tag_base.asp">HTML base Tag</a>
+</body>
+----------------------------------------------------------------------------------
 The style Attribute
 ---------------------
 The style attribute is used to add styles to an element, such as color, font, size, and more.
@@ -92,9 +127,42 @@ Tip: A screen reader will pronounce the words in <em> with an emphasis, using ve
 <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
 <sub> - Subscript text => The HTML <sub> element defines subscript text. Subscript text appears half a character below the normal line, and is sometimes rendered in a smaller font. Subscript text can be used for chemical formulas, like H2O:
 <sup> - Superscript text => The HTML <sup> element defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1]:
-the above elements have block level elements
+the above elements have inline elements
 ----------------------------------------------------------------------------
 HTML Comment Tags
 --------------------
 <!-- Write your comments here -->
 Note: Comments are not displayed by the browser, but they can help document your HTML source code.
+-----------------------------------------------------------------------------------
+HTML Links - The target Attribute
+----------------------------------
+By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.
+The target attribute specifies where to open the linked document.
+The target attribute can have one of the following values:
+_self - Default. Opens the document in the same window/tab as it was clicked
+_blank - Opens the document in a new window or tab
+_parent - Opens the document in the parent frame
+_top - Opens the document in the full body of the window
+-------------------------------------------------------------------------------
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+-----------------------------------------------------------------------------
+<th colspan="2">Telephone</th>
+<th rowspan="2">Telephone:</th>
+---------------------------------------------------------------------------
+HTML Layout Elements
+HTML has several semantic elements that define the different parts of a web page:
+HTML5 Semantic Elements	
+<header> - Defines a header for a document or a section
+<nav> - Defines a set of navigation links
+<section> - Defines a section in a document
+<article> - Defines an independent, self-contained content
+<aside> - Defines content aside from the content (like a sidebar)
+<footer> - Defines a footer for a document or a section
+<details> - Defines additional details that the user can open and close on demand
+<summary> - Defines a heading for the <details> element
+----------------------------------------------------------------------------------------
+
